@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Name"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fullname"
+        android:inputType="textPersonName"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose 2 colors"
+        android:textSize="18sp"
+        android:paddingBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue"
+            android:buttonTint="@android:color/holo_blue_dark" />
+
+        <CheckBox
+            android:id="@+id/checkBoxRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:buttonTint="@android:color/holo_red_dark"
+            android:layout_marginStart="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yellow"
+            android:buttonTint="@android:color/holo_orange_light"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonMix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MIX"
+        android:layout_marginTop="32dp"
+        android:enabled="false"/>
+</LinearLayout>
